@@ -2,7 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import {ProductModule} from './product/product.module';
 import { FirstComponent } from './first/first.component';
+
 
 @NgModule({
   declarations: [
@@ -10,7 +12,8 @@ import { FirstComponent } from './first/first.component';
     FirstComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ProductModule
   ],
   providers: [],
   bootstrap: [AppComponent]
