@@ -1,1 +1,11 @@
-<p>product-list works!</p>
+<div>
+  <ul>
+    <li *ngFor="let item of products">
+      <ul>
+        <li>Name: {{item.name}}</li>
+        <li>Description: {{item.description}}</li>
+        <li>Price: {{item.price}}</li>
+      </ul>
+    </li>
+  </ul>
+</div>
