@@ -1,0 +1,10 @@
+.cart{
+  border: 1px solid black;
+  border-radius: 12px;
+  text-align: center;
+}
+.cart-list{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}

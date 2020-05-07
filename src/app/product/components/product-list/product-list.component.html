@@ -1,10 +1,12 @@
 <div>
-  <ul>
+  <ul class="product-list">
     <li *ngFor="let item of products">
-      <ul>
+      <ul class="product">
         <li>Name: {{item.name}}</li>
         <li>Description: {{item.description}}</li>
-        <li>Price: {{item.price}}</li>
+        <li>Price: {{item.price | currency}}</li>
+        <li *ngIf="item.isAvailable">Avaliable</li>
+        <li>Category: {{item.category}}</li>
       </ul>
     </li>
   </ul>
