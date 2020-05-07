@@ -1,0 +1,10 @@
+.product-list {
+  border: 1px solid black;
+  border-radius: 12px;
+}
+.product{
+  border-bottom: 1px solid black;
+}
+.product:hover{
+  background: #e2e2e2;
+}

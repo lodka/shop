@@ -2,18 +2,20 @@ import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 
 import {ProductListComponent} from './components/product-list/product-list.component';
-import {ProductComponentComponent} from './components/product-component/product-component.component';
+import {ProductComponent} from './components/product-component/product.component';
+import {ProductService} from './services/product.service';
 
 @NgModule({
   imports: [
     CommonModule,
   ],
   declarations: [
-    ProductComponentComponent,
+    ProductComponent,
     ProductListComponent,
   ],
+  providers: [],
   exports: [
-    ProductComponentComponent,
+    ProductComponent,
     ProductListComponent,
   ],
 })

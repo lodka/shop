@@ -3,5 +3,6 @@ export enum Category {
   Meat = 'Meat',
   Fruit = 'Fruit',
   Vegetable = 'Vegetable',
-  Grocery = 'Grocery'
+  Grocery = 'Grocery',
+  Electronics = 'Electronics'
 }
