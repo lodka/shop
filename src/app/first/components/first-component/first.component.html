@@ -4,7 +4,7 @@
     <li>I describe myself as: {{description}}</li>
     <li>I cost: {{price | currency}}(that's way too much)</li>
     <li>My category is {{category}}</li>
-    <li>And {{doIAvaliable()}}</li>
+    <li>And {{isAvailable ? "I'm avaliable :)" : "I'm not avaliable :("}}</li>
   </ul>
   I'm being sold in:
   <ul *ngFor="let shop of shops">

@@ -6,16 +6,16 @@ import {Category} from '../../../shared/categories.enum';
   templateUrl: './first.component.html',
   styleUrls: ['./first.component.css']
 })
-export class FirstComponent implements OnInit {
+export class FirstComponent {
 
   @Input()
-  public shops: Array<string>;
+  shops: Array<string>;
 
-  public name: string;
-  public description: string;
-  public price: number;
-  public category: Category;
-  private isAvailable: boolean;
+  name: string;
+  description: string;
+  price: number;
+  category: Category;
+  isAvailable: boolean;
 
   constructor() {
     this.name = 'Steak';
@@ -23,12 +23,5 @@ export class FirstComponent implements OnInit {
     this.price = 3483;
     this.category = Category.Meat;
     this.isAvailable = true;
-  }
-
-  ngOnInit(): void {
-  }
-
-  doIAvaliable(): string {
-    return this.isAvailable ? `I'm avaliable :)` : `I'm not avaliable :(`;
   }
 }

@@ -8,7 +8,6 @@ import {ProductService} from '../../services/product.service';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent implements OnInit{
-
   products: Array<Product>;
 
   constructor(private listProducts: ProductService) {
