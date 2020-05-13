@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 import {ProductModule} from './product/product.module';
 import { FirstComponent } from './first/components/first-component/first.component';
 import {CartComponent} from './cart/components/cart-component/cart.component';
-import {CartService} from './cart/services/cart.service';
+// import {CartService} from './cart/services/cart.service';
 
 
 @NgModule({
