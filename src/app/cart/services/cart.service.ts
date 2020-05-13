@@ -10,6 +10,10 @@ export class CartService {
 
   constructor(private productService: ProductService) { }
 
+  // Я рекомендую приватные методы опускать ниже, а публичные выше.
+  // Публичные методы  - это API компонента. Если они вызывают какие-то приватные методы
+  // и интересует их бизнес логика, то тогда можно прокрутить ниже и смотреть их.
+  // Думаю, так удобнее. Хотя не очень понятно, зачем тут этот приватные метод.
   private loadProductsList(): void {
     this.productsList = this.productService.getProducts();
   }
