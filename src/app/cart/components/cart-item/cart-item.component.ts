@@ -18,6 +18,6 @@ export class CartItemComponent {
   }
 
   removeItem(): void {
-    this.product.isAvailable = false;
+    this.product.isBought = false;
   }
 }

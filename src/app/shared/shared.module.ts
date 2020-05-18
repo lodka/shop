@@ -1,6 +1,6 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {CartHoverDirective} from './cart-hover.directive';
+import {CartHoverDirective} from './directives/cart-hover.directive';
 
 
 @NgModule({
