@@ -1,6 +1,11 @@
 <div class="cart">
   <h1>Cart</h1>
-  <ul *ngFor="let product of cartService.getProducts()" class="cart-list">
-    <li *ngIf="product.isAvailable">{{product.name}}</li>
+  <ul *ngFor="let product of cartService.calcCartItems().products" class="cart-list">
+    <li *ngIf="product.isAvailable" appHover>
+      <app-cart-item [product]="product">
+      </app-cart-item>
+    </li>
   </ul>
+  <p>Total count: {{cartService.calcCartItems().totalCount}}</p>
+  <p>Total price: {{cartService.calcCartItems().totalPrice | currency}}</p>
 </div>
