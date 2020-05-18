@@ -1,1 +1,7 @@
-<button (click)="onBuy()">Buy</button>
+<ul class="product">
+  <li>Name: {{product.name}}</li>
+  <li>Description: {{product.description}}</li>
+  <li>Price: {{product.price | currency}}</li>
+  <li>Category: {{product.category}}</li>
+</ul>
+<button (click)="onBuy()" #button>Buy</button>

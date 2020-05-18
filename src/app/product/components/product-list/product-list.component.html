@@ -1,13 +1,9 @@
-<div>
+<div *ngIf="Products">
   <ul class="product-list">
-    <li *ngFor="let item of products">
-      <ul class="product">
-        <li>Name: {{item.name}}</li>
-        <li>Description: {{item.description}}</li>
-        <li>Price: {{item.price | currency}}</li>
-        <li *ngIf="item.isAvailable">Avaliable</li>
-        <li>Category: {{item.category}}</li>
-      </ul>
-    </li>
+    <ng-container *ngFor="let product of Products">
+      <li>
+        <app-product [product]="product"></app-product>
+      </li>
+    </ng-container>
   </ul>
 </div>
