@@ -12,6 +12,7 @@ import {Product} from '../../../product/models/product.model';
 export class CartItemComponent {
   @Input() product: Product;
 
+  // Для чего?
   @ViewChild('buttonElement') button: ElementRef<HTMLButtonElement>;
 
   constructor() {

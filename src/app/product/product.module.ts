@@ -15,7 +15,7 @@ import {ProductService} from './services/product.service';
   ],
   providers: [],
   exports: [
-    ProductComponent,
+    // ProductComponent, // не надо делать публичным, он используется только внутри ProductListComponent
     ProductListComponent,
   ],
 })

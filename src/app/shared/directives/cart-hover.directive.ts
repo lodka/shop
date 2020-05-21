@@ -3,7 +3,7 @@ import {Directive, ElementRef, HostBinding, HostListener, Renderer2} from '@angu
 @Directive({
   selector: '[appHover]'
 })
-export class CartHoverDirective {
+export class CartHoverDirective { // Может не нужен тут префикс Cart...
 
   constructor(private element: ElementRef, private renderer: Renderer2) {
   }

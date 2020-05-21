@@ -16,6 +16,7 @@ export class ProductComponent implements AfterViewInit {
   }
 
   ngAfterViewInit(): void {
+    // Можно, но не нужно так делать. Лучше в шаблоне добавить атрибут [disabled]="!product.isAvailable"
     if (!this.product.isAvailable) {
       this.button.nativeElement.disabled = true;
     }
