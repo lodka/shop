@@ -1,5 +1,10 @@
 <div *ngIf="Products">
   <ul class="product-list">
+    <!-- Какую роль тут играет  ng-container ?
+      Можно директиву *ngFor переместить на li элемент
+      ng-container удобно использовать когда надо повторять не один элемент, а несколько.
+      Тогда их можно завернуть в контейнер и поставить на нем директиву *ngFor
+    -->
     <ng-container *ngFor="let product of Products">
       <li>
         <app-product [product]="product"></app-product>

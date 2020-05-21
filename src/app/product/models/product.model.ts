@@ -7,7 +7,7 @@ export class Product {
     public price: number,
     public category: Category,
     public isAvailable: boolean,
-    public isBought?: boolean
+    public isBought?: boolean // товары будут только в одном экземпляре?
   ) {
     this.isBought = false;
   }
